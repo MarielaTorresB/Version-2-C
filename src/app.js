@@ -1,27 +1,32 @@
+//Inicializando Materialize
+M.AutoInit();
+
+
+
 //ESTA ES UNA DE LAS PARTES PRINCIPALES DEL SPA: EL ENRUTADOR
-"use strict"; //No entiendo (?)
+//"use strict"; //No entiendo (?)
 
 //Importando vistas
-import Home         from './src/views/pages/Home.js.js'
-import About        from './src/views/pages/About.js.js'
-import Error404     from './src/views/pages/Error404.js.js'
-import PostShow     from './src/views/pages/PostShow.js.js'
-import Register     from './src/views/pages/Register.js.js'
+import Home         from '/src/views/pages/Home.js'
+import About        from '/src/views/pages/About.js'
+import Error404     from '/src/views/pages/Error404.js'
+// import Register     from 'src/views/pages/Register.js'
+import Result       from '/src/views/pages/Result.js'
 
 
 //Importando componentes
-import Navbar       from './src/views/components/Navbar.js.js'
-import Bottombar    from './src/views/components/Bottombar.js.js' 
+import Navbar       from '/src/views/components/Navbar.js'
+import Bottombar    from '/src/views/components/Bottombar.js' 
 
 //Importando utilidades (?)
-import Utils        from './src/services/Utils.js.js'
+import Utils        from '/src/services/Utils.js'
 
 // Lista de rutas soportadas. Cualquier ruta distinta dara como resultado Error 404.
 const routes = {
-    '/'             : Home
-    , '/about'      : About
-    , '/p/:id'      : PostShow
-    , '/register'   : Register
+    '/'             : Home,
+    '/about'        : About,
+    // '/register'     : Register,
+    '/result'       : Result
 };
 //IMPORTANTE: Asegurarnos de que todos los enlaces en la aplicación también tengan el "#" en ellos
 

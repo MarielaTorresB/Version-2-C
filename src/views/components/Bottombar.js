@@ -1,12 +1,12 @@
 let Bottombar = {
     render: async () => {
         let view =  /*html*/ `
-        <footer class="footer">
-            <div class="content has-text-centered">
-                <p>
-                    Elaborado por: Mariela Torres Inc.
-                </p>
+        <footer class="page-footer black">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Mariela Inc.
             </div>
+          </div>
         </footer>
         `
         return view
