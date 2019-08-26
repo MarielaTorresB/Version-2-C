@@ -1,5 +1,5 @@
 //Inicializando Materialize
-M.AutoInit();
+//M.AutoInit();
 
 
 

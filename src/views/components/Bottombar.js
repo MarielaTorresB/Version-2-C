@@ -1,13 +1,11 @@
 let Bottombar = {
     render: async () => {
         let view =  /*html*/ `
-        <footer class="page-footer black">
-          <div class="footer-copyright">
+        <footer> 
             <div class="container">
             © 2019 Mariela Inc.
             </div>
-          </div>
-        </footer>
+         </footer>
         `
         return view
     },

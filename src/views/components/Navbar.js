@@ -1,17 +1,11 @@
 let Navbar = {
     render: async() => {
         let view = /*html*/ `
-        <nav>
-            <div class="nav-wrapper black">
+        <header>
             <image src="Images/hacker.png" width="7%"></image>
-            <a class="brand-logo">Masked Pass </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/#/about">Acerca de</a></li>
-                <li><a href="badges.html"> Mis contraseñas</a></li>
-                <li><a href="collapsible.html">Mi perfil</a></li>
-            </ul>
-            </div>
-        </nav>S
+            <h1> MaskedPass </h1>
+            <a href="/src/#/about"> Acerca de </a>
+        </header>
         `
         return view
     },
@@ -19,3 +13,4 @@ let Navbar = {
 }
 
 export default Navbar;
+
